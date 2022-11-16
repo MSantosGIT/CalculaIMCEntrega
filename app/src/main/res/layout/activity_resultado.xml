@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#19FFD180"
+    tools:context=".ResultadoActivity">
+
+    <TextView
+        android:id="@+id/txtTituloResultado"
+        android:layout_width="422dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="Tela de Resultado"
+        android:background="#3700B2"
+        android:contentDescription="titulo"
+        android:textColor="@color/white"
+        android:text="Tela de resultados"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="361dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="Nome"
+        android:contentDescription="Nome"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloResultado"
+        tools:text="Nome" />
+
+    <TextView
+        android:id="@+id/txtTitoIMC"
+        android:layout_width="171dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="Peso"
+        android:contentDescription="TituloImC"
+        android:text="Resultado IMC:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtImc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+    <TextView
+        android:id="@+id/txtImc"
+        android:layout_width="98dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="76dp"
+        android:autofillHints="Resultado"
+        android:contentDescription="Resultado do IMC"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
+        tools:text="Resultado do IMC" />
+
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="356dp"
+        android:layout_height="297dp"
+        android:autofillHints="Mensagem ao usuário"
+        android:contentDescription="Mensagem ao Usuário"
+        android:textColor="@android:color/system_neutral1_900"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitoIMC"
+        app:layout_constraintVertical_bias="0.277"
+        tools:text="Mensagem ao uauário" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="393dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitoIMC"
+        app:layout_constraintVertical_bias="0.557"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="393dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitoIMC"
+        app:layout_constraintTop_toBottomOf="@+id/txtNome"
+        app:layout_constraintVertical_bias="0.542"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="407dp"
+        android:layout_height="4dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipo"
+        app:layout_constraintVertical_bias="0.121"
+        tools:layout_editor_absoluteX="1dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
