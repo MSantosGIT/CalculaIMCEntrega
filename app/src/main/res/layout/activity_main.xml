@@ -29,7 +29,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:maxLines="5"
-        android:text="Este é um aplicativo que serve de referência, mas, que um médico deve ser consultado."
+        android:text="@string/este_um_aplicativo_que_serve_de_refer_ncia_mas_que_um_m_dico_deve_ser_consultado"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
-        android:text="Iniciar o Cálculo"
+        android:text="@string/iniciar_o_c_lculo"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -59,6 +59,7 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/btnIniciar"
         app:layout_constraintTop_toBottomOf="@+id/txtAlerta"
-        tools:layout_editor_absoluteX="1dp" />
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

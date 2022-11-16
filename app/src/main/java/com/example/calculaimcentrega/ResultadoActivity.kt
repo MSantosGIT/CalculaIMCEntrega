@@ -17,8 +17,8 @@ class ResultadoActivity : AppCompatActivity() {
         val imc: String = intent.getStringExtra(CalculaIMCActivity.TAG).toString()
         val tipoIdosoAdulto: String = intent.getStringExtra(CalculaIMCActivity.TAG1).toString()
         val nome: String = intent.getStringExtra(CalculaIMCActivity.TAG2).toString()
-        binding.txtImc.text = imc.toString()
-        binding.txtNome.text = nome.toString()
+        binding.txtImc.text = imc
+        binding.txtNome.text = nome
 
         if (tipoIdosoAdulto.toInt() == 1){
             if(imc.toDouble() < 18.5){
@@ -70,7 +70,7 @@ class ResultadoActivity : AppCompatActivity() {
                 binding.txtTipo.text = "Muito Bem:\nVocê está com peso Adequado ou eutrófico."
             }
             if((imc.toDouble() > 27)){
-                binding.txtTipo.text = "Atenção:\nVocê está com Sobrepeso."
+                binding.txtTipo.text = "Atenção: Você está com Sobrepeso."
             }
         }
 
