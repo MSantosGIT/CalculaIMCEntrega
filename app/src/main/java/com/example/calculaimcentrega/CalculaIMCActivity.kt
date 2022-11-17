@@ -54,13 +54,12 @@ class CalculaIMCActivity : AppCompatActivity() {
         val altura = binding.EdtAltura.text.toString().toDouble()
         ok = 0
 
-        if(binding.EdtPeso.text.isEmpty()){
-            binding.txtMensagem.text = "Os campos Peso é onbrigatório."
+        if(binding.EdtPeso.text.isBlank()){
+            binding.EdtPeso.error = "Os campos Peso é onbrigatório."
         }else{
-            if(binding.EdtAltura.text.isEmpty()) {
-                binding.txtMensagem.text = "Os campos 'Altura' é onbrigatório."
+            if(binding.EdtAltura.text.isBlank()) {
+                binding.EdtAltura.error = "Os campos 'Altura' é onbrigatório."
             }else{
-                binding.txtMensagem.text = "Calculando o IMC"
                 resultado = peso / ((altura * altura)/10000)
                 ok = 1
             }
